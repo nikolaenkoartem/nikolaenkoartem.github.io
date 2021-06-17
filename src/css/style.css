@@ -1,0 +1,575 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #343f51;
+}
+
+.logo {
+    color: white;
+    font-size: 26px;
+    line-height: 60px;
+    padding-left: 326px;
+    float: left;
+}
+
+.menu {
+    float: left;
+    padding-left: 450px;
+}
+
+.menu li {
+    float: left;
+    line-height: 60px;
+    color: white;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.main {
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/ten.png) 100% 104% no-repeat, url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/fon.png) center/cover no-repeat;
+}
+
+.title_container1 {
+    float: left;
+    margin: 355px 0px 0px 300px;
+    color: #2c384a;
+    text-align: center;
+}
+
+.title_container1 h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.title_container1 h3 {
+    font-size: 22px;
+    margin-top: 40px;
+    color: #79818d;
+}
+
+.title_container1 input {
+    margin: 50px 14px 0px 14px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 14px;
+    padding: 0px 16px;
+    margin: 50px 14px 0px 14px;
+}
+
+.info {
+    width: 100%;
+    height: 716px;
+    background: url(../img/cherta.png) 50% 160px no-repeat, url(../img/foto_pod_cherta.png) 50% 220px no-repeat, url(../img/fon2.jpg) center/cover no-repeat;
+    float: left;
+}
+
+.title_container2 {
+    margin-top: 108px;
+    text-align: center;
+}
+
+.title_container2 h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #263244;
+}
+
+.title_container2 {
+    font-size: 14px;
+    color: #3f495a;
+}
+
+#h41 {
+    margin-top: 330px;
+    max-width: 735px;
+    margin-left: 610px;
+    text-align: start;
+    color: #3f495a;
+}
+
+#h42 {
+    margin-top: 43px;
+    max-width: 735px;
+    margin-left: 610px;
+    text-align: start;
+    color: #3f495a;
+}
+
+.title_container2 input {
+    margin-top: 45px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: url(../img/icon.png) 9px 6px no-repeat;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 14px;
+    width: 154px;
+    padding: 0px 12px 0px 32px;
+}
+
+.skill {
+    width: 100%;
+    height: 521px;
+    background: url(../img/PC.png) 495px 275px no-repeat, url(../img/znak.png) 790px 271px no-repeat, url(../img/raketa.png) 1086px 265px no-repeat, url(../img/rupor.png) 1376px 269px no-repeat, url(../img/cherta.png) 50% 160px no-repeat, url(../img/fon3.png) no-repeat;
+    float: left;
+}
+
+.title_container3 {
+    margin-top: 108px;
+    text-align: center;
+}
+
+.title_container3 h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #263244;
+}
+
+.title_container3 h3 {
+    font-size: 16px;
+    color: #cf7600;
+    margin-top: 218px;
+    font-weight: bold;
+    float: left;
+}
+
+#vd {
+    margin-left: 475px;
+}
+
+#r {
+    margin-left: 201px;
+}
+
+#co {
+    margin-left: 182px;
+}
+
+#m {
+    margin-left: 175px;
+}
+
+.title_container3 h4 {
+    font-size: 14px;
+    color: #3f495a;
+    margin-top: 18px;
+    max-width: 214px;
+    float: left;
+}
+
+#vdt {
+    margin-left: 410px;
+}
+
+#rt {
+    margin-left: 82px;
+}
+
+#cot {
+    margin-left: 82px;
+}
+
+#mt {
+    margin-left: 80px;
+}
+
+.case {
+    width: 100%;
+    height: 256px;
+    background: url(../img/cherta.png) 50% 160px no-repeat, url(../img/fon4.png) no-repeat;
+    float: left;
+}
+
+.title_container4 {
+    margin-top: 105px;
+    text-align: center;
+}
+
+.title_container4 h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #263244;
+}
+
+.title_container4 h5 {
+    font-size: 14px;
+    color: #626976;
+    margin-top: 70px;
+}
+
+.case2 {
+    width: 100%;
+    height: 900px;
+    background: url(../img/fon5.png) no-repeat;
+    float: left;
+}
+
+.case3 {
+    width: 700px;
+    float: left;
+}
+
+#C {
+    margin-top: 626px;
+    color: #384354;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 388px;
+}
+
+#NP {
+    margin-top: 626px;
+    color: #384354;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 700px;
+}
+
+#KK {
+    margin-top: 15px;
+    margin-left: 388px;
+    font-size: 14px;
+    color: #636a76;
+}
+
+#W {
+    margin-top: 14px;
+    color: #384354;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 388px;
+}
+
+#http {
+    margin-top: 15px;
+    margin-left: 388px;
+    font-size: 14px;
+    color: #636a76;
+}
+
+#NPT {
+    margin-top: 15px;
+    margin-left: 700px;
+    font-size: 14px;
+    color: #636a76;
+    max-width: 870px;
+    line-height: 20px;
+}
+
+.case2 input {
+    margin-left: 388px;
+    margin-top: 22px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    background: url(../img/knopka.png) no-repeat;
+    width: 202px;
+    border-radius: 5px;
+}
+
+.cost {
+    width: 100%;
+    height: 780px;
+    float: left;
+    background: url(../img/line.png) 495px 530px no-repeat;
+}
+
+.title_container5 {
+    margin-top: 30px;
+}
+
+.title_container5 h2 {
+    text-align: center;
+    color: #1c2534;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+
+.title_container5 h3 {
+    font-size: 23px;
+    color: #1c2534;
+    font-weight: bold;
+    margin-left: 495px;
+    line-height: 70px;
+}
+
+.title_container5 select {
+    margin-left: 495px;
+    color: #737373;
+    font-size: 14px;
+    height: 58px;
+    width: 890px;
+    background: url(../img/1.png) no-repeat;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 30px;
+}
+
+.title_container5 h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1c2534;
+}
+
+#srst {
+    margin-top: 40px;
+    margin-left: 495px;
+    float: left;
+    line-height: 40px;
+}
+
+.title_container5 h5 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #1c2534;
+}
+
+#srst2 {
+    margin-top: 40px;
+    margin-left: 1365px;
+    line-height: 40px;
+}
+
+.statistic {
+    width: 100%;
+    height: 500px;
+    float: left;
+    background: url(../img/cherta.png) center 157px no-repeat, url(../img/smile.png) 495px 245px no-repeat, url(../img/znak2.png) 782px 250px no-repeat, url(../img/galka.png) 1080px 250px no-repeat, url(../img/kubok.png) 1370px 245px no-repeat, url(../img/fon6.png) no-repeat;
+}
+
+.title_container6 {
+    margin-top: 103px;
+    height: 290px;
+}
+
+.title_container6 h2 {
+    text-align: center;
+    font-size: 27px;
+    color: #323d4f;
+    font-weight: bold;
+}
+
+.title_container6 h3 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #323e4f;
+    float: left;
+}
+
+#fich {
+    margin-left: 490px;
+    margin-top: 200px;
+}
+
+#sech {
+    margin-left: 223px;
+    margin-top: 200px;
+}
+
+#thch {
+    margin-left: 213px;
+    margin-top: 200px;
+}
+
+#foch {
+    margin-left: 248px;
+    margin-top: 200px;
+}
+
+.title_container61 h5 {
+    font-size: 16px;
+    color: #323e4f;
+    font-weight: bold;
+    float: left;
+}
+
+#schk {
+    margin-left: 419px;
+}
+
+#chr {
+    margin-left: 120px;
+}
+
+#prz {
+    margin-left: 127px;
+}
+
+#nap {
+    margin-left: 120px;
+}
+
+.response {
+    height: 590px;
+    width: 100%;
+    float: left;
+    background: url(../img/cherta.png) center 157px no-repeat, url(../img/foto_otziv.png) center 225px no-repeat
+}
+
+.title_containe7 {
+    margin-top: 105px;
+}
+
+.title_containe7 h2 {
+    text-align: center;
+    font-size: 27px;
+    color: #323d4f;
+    font-weight: bold;
+}
+
+.title_containe7 h4 {
+    max-width: 690px;
+    text-align: center;
+    margin-top: 235px;
+    margin-left: 605px;
+    color: #424d5e;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.title_containe7 h5 {
+    color: #424d5e;
+    font-size: 18px;
+    margin-top: 33px;
+    text-align: center;
+}
+
+.title_containe7 span {
+    font-weight: bold;
+}
+
+.contacts {
+    height: 810px;
+    width: 100%;
+    float: left;
+    background: url(../img/cherta.png) center 159px no-repeat, url(../img/f.png) 753px 713px no-repeat, url(../img/twit.png) 824px 717px no-repeat, url(../img/ball.png) 904px 715px no-repeat, url(../img/cat.png) 983px 715px no-repeat, url(../img/inst.png) 1063px 715px no-repeat, url(../img/in.png) 1143px 716px no-repeat, url(../img/geo.png) 700px 260px no-repeat, url(../img/email.png) 945px 260px no-repeat, url(../img/phone.png) 1197px 260px no-repeat, url(../img/fon7.png) no-repeat;
+}
+
+.title_containe8 {
+    margin-top: 105px;
+}
+
+.title_containe8 h2 {
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+}
+
+.title_containe8 h5 {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 70px;
+}
+
+.title_containe8 h4 {
+    color: white;
+    font-size: 15px;
+}
+
+.title_container81 {
+    height: 130px;
+}
+
+#adres {
+    margin-left: 628px;
+    margin-top: 85px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+
+#maill {
+    float: left;
+    margin-left: 77px;
+    margin-top: 88px;
+}
+
+#numberphone {
+    float: left;
+    margin-left: 87px;
+    margin-top: 88px;
+}
+
+.title_containe8 h3 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    margin-top: 25px;
+}
+
+#Namet {
+    background: url(../img/name.png);
+    width: 352px;
+    height: 35px;
+    color: #111;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-left: 590px;
+    border-radius: 0px;
+    margin-top: 40px;
+}
+
+#Emailt {
+    background: url(../img/mail.png);
+    width: 352px;
+    height: 35px;
+    color: #111;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-left: 33px;
+    border-radius: 0px;
+}
+
+#Textt {
+    background: url(../img/text.png);
+    width: 741px;
+    height: 95px;
+    color: #111;
+    font-size: 16px;
+    padding-left: 20px;
+    margin-left: 590px;
+    border-radius: 0px;
+    margin-top: 15px;
+    padding-top: 11px;
+}
+
+#go {
+    margin-top: 28px;
+    height: 48px;
+    text-align: center;
+    border: 2px solid #fff;
+    background: none;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 127px;
+    color: white;
+    margin-left: 897px;
+}
+
+.map {
+    height: 350px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    background: url(../img/fon8.png) no-repeat;
+}

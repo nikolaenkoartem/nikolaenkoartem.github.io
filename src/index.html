@@ -8,6 +8,9 @@
     <meta name="robots" content="all">
     <meta property="og:title" content="Это моя первая страница">
     <title>Артём Николаенко - Веб-разработчик</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -27,126 +30,146 @@
         </nav>
     </header>
     <div class="main">
-        <div class="title__container">
-            <h1>Привет <br> Я Артём Николаенко</h1>
+        <div class="title_container1">
+            <h1>Привет, <br> Я Артём Николаенко</h1>
             <h3>Фулл стек веб-разработчик</h3>
             <input type="submit" value="Обо мне">
             <input type="submit" value="Мои работы">
         </div>
     </div>
     <div class="info">
-        <div class="title__container1">
+        <div class="title_container2">
             <h2>ОБО МНЕ</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic expedita numquam voluptatibus velit voluptatem totam possimus aut aperiam esse consectetur.</h4>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vitae aut animi ut quasi quis alias saepe tenetur itaque, consectetur, reprehenderit doloremque laboriosam eaque doloribus.</h4>
+            <h4 id="h41">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic expedita numquam voluptatibus velit voluptatem totam possimus aut aperiam esse consectetur.</h4>
+            <h4 id="h42">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vitae aut animi ut quasi quis alias saepe tenetur itaque, consectetur, reprehenderit doloremque laboriosam eaque doloribus.</h4>
             <input type="submit" value="Скачать резюме">
         </div>
     </div>
     <div class="skill">
-        <div class="title__container2">
+        <div class="title_container3">
             <h2>ЧТО Я УМЕЮ</h2>
-            <ul>
-                <li>Веб-дизайн</li>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nesciunt.</h4>
-                <li>Разработка</li>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, aspernatur, at.</h4>
-                <li>СЕО-Оптимизация</li>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corrupti enim numquam?</h4>
-                <li>Маркетинг</li>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro autem nulla a officiis?</h4>
-            </ul>
+            <h3 id="vd">Веб-дизайн</h3>
+            <h3 id="r">Разработка</h3>
+            <h3 id="co">СЕО-Оптимизация</h3>
+            <h3 id="m">Маркетинг</h3>
+            <h4 id="vdt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nesciunt.</h4>
+            <h4 id="rt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, aspernatur, at.</h4>
+            <h4 id="cot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corrupti enim numquam?</h4>
+            <h4 id="mt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro autem nulla a officiis?</h4>
         </div>
     </div>
     <div class="case">
-        <div class="title__container3">
-           <h2>КЕЙСЫ</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maiores voluptates omnis nulla illum excepturi eligendi quas.</h4>
-            <h2>CLIENT</h2>
-            <h4>Какая-то компания</h4>
-            <h2>WEBSITE</h2>
-            <h4>http://www.somedomain.com</h4>
+        <div class="title_container4">
+            <h2>КЕЙСЫ</h2>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maiores voluptates omnis nulla illum excepturi eligendi quas.</h5>
+        </div>
+    </div>
+    <div class="case2">
+        <div class="case3">
+            <h3 id="C">CLIENT:</h3>
+            <h4 id="KK">Какая-то компания</h4>
+            <h3 id="W">WEBSITE:</h3>
+            <h4 id="http">http://www.somedomain.com</h4>
             <input type="submit" value="VISIT LIVE SITE">
-            <h2>Название проекта</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ipsa eius possimus, quidem officiis pariatur expedita ad voluptates fuga sint repellat aliquam temporibus, nulla nisi.</h4>
+        </div>
+        <div class="case4">
+            <h3 id="NP">Название проекта</h3>
+            <h4 id="NPT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit aspernatur ipsum iusto corporis, vitae earum eligendi quaerat adipisci cupiditate officia fugit veniam, sed molestias nesciunt aperiam exercitationem consequuntur enim unde. Beatae natus rerum veniam eius obcaecati repellendus neque a quam!</h4>
         </div>
     </div>
     <div class="cost">
-        <div class="title__container4">
+        <div class="title_container5">
             <h2>Расчет стоимости</h2>
             <h3>ТИП САЙТА</h3>
             <select name="list1" id="list1">
-            <option value="Opt0" disabled selected>Выберите пункт 
-            </option>
-            <option value="Opt1">1
-            </option>
-            <option value="Opt2">2
-            </option>
-            <option value="Opt3">3
-            </option>
+                <option value="Opt0" disabled selected>Выберите пункт...
+                </option>
+                <option value="Opt1">1
+                </option>
+                <option value="Opt2">2
+                </option>
+                <option value="Opt3">3
+                </option>
             </select>
             <h3>ДИЗАЙН</h3>
-             <select name="list2" id="list2">
-             <option value="Opt0" disabled selected>Выберите пункт 
-            </option>
-            <option value="Opt4">1
-            </option>
-            <option value="Opt5">2
-            </option>
+            <select name="list2" id="list2">
+                <option value="Opt0" disabled selected>Выберите пункт...
+                </option>
+                <option value="Opt4">1
+                </option>
+                <option value="Opt5">2
+                </option>
             </select>
             <h3>АДАПТИВНОСТЬ</h3>
-             <select name="list3" id="list3">
-             <option value="Opt0" disabled selected>Выберите пункт 
-            </option>
-            <option value="Opt6">1
-            </option>
-            <option value="Opt7">2
-            </option>
+            <select name="list3" id="list3">
+                <option value="Opt0" disabled selected>Выберите пункт...
+                </option>
+                <option value="Opt6">1
+                </option>
+                <option value="Opt7">2
+                </option>
             </select>
-            <h4>Сроки</h4>
-            <h4>0</h4>
-            <h4>Стоимость</h4>
-            <h4>0</h4>
+            <div id="srst">
+                <h4 id="Sr">Сроки</h4>
+                <h4 id="St">Стоимость</h4>
+            </div>
+            <div id="srst2">
+                <h5 id="Sr2">0</h5>
+                <h5 id="St2">0</h5>
+            </div>
         </div>
     </div>
     <div class="statistic">
-        <div class="title__container5">
+        <div class="title_container6">
             <h2>НЕМНОГО СТАТИСТИКИ</h2>
-            <h2>120</h2>
-            <h3>счастливых клиентов</h3>
-            <h2>4,600</h2>
-            <h3>часов работы</h3>
-            <h2>340</h2>
-            <h3>проектов завершено</h3>
-            <h2>23</h2>
-            <h3>наград получено</h3>
+            <h3 id="fich">120</h3>
+            <h3 id="sech">4,600</h3>
+            <h3 id="thch">340</h3>
+            <h3 id="foch">23</h3>
+        </div>
+        <div class="title_container61">
+            <h5 id="schk">СЧАСТЛИВЫХ КЛИЕНТОВ</h5>
+            <h5 id="chr">ЧАСОВ РАБОТЫ</h5>
+            <h5 id="prz">ПРОЕКТОВ ЗАВЕРШЕНО</h5>
+            <h5 id="nap">НАГРАД ПОЛУЧЕНО</h5>
         </div>
     </div>
     <div class="response">
-        <div class="title__containe6">
+        <div class="title_containe7">
             <h2>ОТЗЫВЫ</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis obcaecati, vitae accusamus sit impedit dolore dignissimos assumenda, voluptates maiores eos sed explicabo nostrum ipsa molestias est eveniet at, dolorum blanditiis ab voluptatem cupiditate perspiciatis neque.</h4>
-            <h4>Михаил, Ген директор ПАО "Газпром".</h4>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tempora animi pariatur sit sint saepe, molestias ducimus magnam corrupti facere reprehenderit culpa, incidunt quam fugiat.</h4>
+            <h5>
+                <span>Михаил</span>, Ген директор ПАО "Газпром".
+            </h5>
         </div>
     </div>
     <div class="contacts">
-        <div class="title__containe7">
+        <div class="title_containe8">
             <h2>МОИ КОНТАКТЫ</h2>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus harum tenetur nulla, laboriosam quisquam odit.</h4>
-            <h4>Волгоград, <br> Набережная 11</h4>
-            <h4>info@companyname.com</h4>
-            <h4>+7 999 999 99 99</h4>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus harum tenetur nulla, laboriosam quisquam odit.</h5>
+            <div class="title_container81">
+                <h4 id="adres">Волжский, <br> Волгоградская область</h4>
+                <h4 id="maill">TemaNickolaenko@yandex.ru</h4>
+                <h4 id="numberphone">+7 904 412 33 30</h4>
+            </div>
             <h3>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h3>
-            <form action="">
-                <input type="text" name="text_input1" placeholder="Имя">
-                <input type="text" name="text_input2" placeholder="Email">
-                <textarea name="1" id="1" cols="50" rows="6">
-                </textarea>
-                <input type="reset" value="Отправить">
+            <form action="action">
+                <input type="text" name="text_input1" id="Namet" placeholder="Имя">
+                <input type="text" name="text_input2" id="Emailt" placeholder="Email">
+                <textarea name="1" id="Textt" cols="50" rows="5" placeholder="Введите ваш текст">
+</textarea>
+                <p><input type="reset" id="go" value="Отправить"></p>
             </form>
         </div>
     </div>
+    <div class="map">
+        <h2>КАРТА</h2>
+    </div>
 </body>
 <footer>
-    <h5>Copyright 2021 Артем Николаенко. Design by Web</h5>
+    <div class="footer">
+        <h5>Copyright © 2021 Артем Николаенко. Design by Web</h5>
+    </div>
 </footer>
+
 </html>
