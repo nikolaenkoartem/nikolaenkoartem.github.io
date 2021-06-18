@@ -290,6 +290,7 @@ nav {
 
 .title_container5 {
     margin-top: 30px;
+    background-color: white;
 }
 
 .title_container5 h2 {
@@ -574,5 +575,5 @@ nav {
 .footer {
     text-align: center;
     font-size: 13px;
-    background: url(../img/fon8.png) center no-repeat;
+    background: url(../img/fon8.png) center/cover no-repeat;
 }
