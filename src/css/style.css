@@ -566,10 +566,13 @@ nav {
 
 .map {
     height: 350px;
+    float: left;
+    width: 100%;
+    background-color: yellowgreen;
 }
 
 .footer {
     text-align: center;
     font-size: 13px;
-    background: url(../img/fon8.png) no-repeat;
+    background: url(../img/fon8.png) center no-repeat;
 }
