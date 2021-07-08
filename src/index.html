@@ -8,135 +8,314 @@
     <meta name="robots" content="all">
     <meta property="og:title" content="Это моя первая страница">
     <title>Артём Николаенко - Веб-разработчик</title>
+    <link rel="shortcut icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_100472.ico">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="../src/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <script>
+        window.onload = function() {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function() {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+
+    </script>
     <header>
         <nav>
-            <div class="logo">Артём Николаенко</div>
-            <div class="menu">
-                <ul>
-                    <li>Обо мне</li>
-                    <li>Услуги</li>
-                    <li>Кейсы</li>
-                    <li>Прайс</li>
-                    <li>Отзывы</li>
-                    <li>Контакты</li>
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-2 col-lg-3 col-7">
+                        <div class="logo">Артём Николаенко</div>
+                    </div>
+                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">Обо мне</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Кейсы</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+                        <div class="dropdown">
+                            <a class="btn btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                Навигация
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                                <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                                <li><a class="dropdown-item" href="#">Прайс</a></li>
+                                <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                <li><a class="dropdown-item" href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
-    <div class="main">
-        <div class="title_container1">
-            <h1>Привет, <br> Я Артём Николаенко</h1>
-            <h3>Фулл стек веб-разработчик</h3>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+    <section class="main">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6 mt-5 pt-5">
+                    <div class="title_container1 mt-5">
+                        <h1>Привет, <br> Я Артём Николаенко</h1>
+                        <h3><i class="fa fa-css3 fa-spin" aria-hidden="true"></i>
+                            Фулл стек веб-разработчик</h3>
+                        <input type="button" value="Обо мне">
+                        <input type="button" value="Мои работы">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
     <div class="info">
-        <div class="title_container2">
-            <h2>ОБО МНЕ</h2>
-            <h4 id="h41">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic expedita numquam voluptatibus velit voluptatem totam possimus aut aperiam esse consectetur.</h4>
-            <h4 id="h42">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vitae aut animi ut quasi quis alias saepe tenetur itaque, consectetur, reprehenderit doloremque laboriosam eaque doloribus.</h4>
-            <input type="submit" value="Скачать резюме">
+        <div class="container h-100">
+            <div class="row justify-content-center">
+                <div class="col-xxl-2 col-lg-6">
+                    <div class="title_container2">
+                        <h2>ОБО МНЕ</h2>
+                    </div>
+                </div>
+                <div class="title_container21">
+                    <p><img src="img/cherta.png" alt=""></p>
+                    <p><img src="img/foto_pod_cherta.png" alt="" id="foto_pod_cherta"></p>
+                    <div class="col-xxl-8 col-xl-10 col-lg-10 offset-xxl-2 offset-xl-1 offset-lg-1">
+                        <h3 id="h41">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic expedita numquam voluptatibus velit voluptatem totam possimus aut aperiam esse consectetur.</h3>
+                        <h3 id="h42">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vitae aut animi ut quasi quis alias saepe tenetur itaque, consectetur, reprehenderit doloremque laboriosam eaque doloribus.</h3>
+                    </div>
+                    <input type="button" value="Скачать резюме">
+                </div>
+            </div>
         </div>
     </div>
     <div class="skill">
-        <div class="title_container3">
-            <h2>ЧТО Я УМЕЮ</h2>
-            <h3 id="vd">Веб-дизайн</h3>
-            <h3 id="r">Разработка</h3>
-            <h3 id="co">СЕО-Оптимизация</h3>
-            <h3 id="m">Маркетинг</h3>
-            <h4 id="vdt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nesciunt.</h4>
-            <h4 id="rt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, aspernatur, at.</h4>
-            <h4 id="cot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corrupti enim numquam?</h4>
-            <h4 id="mt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro autem nulla a officiis?</h4>
+        <div class="container h-100">
+            <div class="row justify-content-center">
+                <div class="col-xxl-2 col-lg-6">
+                    <div class="title_container3">
+                        <h2>ЧТО Я УМЕЮ</h2>
+                    </div>
+                </div>
+                <div class="title_container31">
+                    <img src="img/cherta.png" alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center" id="skrw1">
+                <div class="col-1 d-flex justify-content-center align-items-center">
+                    <p><img src="img/PC.png" alt=""></p>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center offset-2">
+                    <p><img src="img/znak.png" alt=""></p>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center offset-2">
+                    <p><img src="img/raketa.png" alt=""></p>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center offset-2">
+                    <p><img src="img/rupor.png" alt=""></p>
+                </div>
+            </div>
+            <div class="row justify-content-center" id="skrw2">
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    <h3 id="vd">Веб-дизайн</h3>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center offset-1">
+                    <h3 id="r">Разработка</h3>
+                </div>
+                <div class="col-4 d-flex justify-content-center align-items-center offset-0">
+                    <h3 id="co">СЕО-Оптимизация</h3>
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center offset-0">
+                    <h3 id="m">Маркетинг</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center" id="skrw3">
+                <div class="col-3 d-flex justify-content-center">
+                    <h4 id="vdt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, nesciunt.</h4>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <h4 id="rt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, aspernatur, at.</h4>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <h4 id="cot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius corrupti enim numquam?</h4>
+                </div>
+                <div class="col-3 d-flex justify-content-center">
+                    <h4 id="mt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro autem nulla a officiis?</h4>
+                </div>
+            </div>
         </div>
     </div>
     <div class="case">
-        <div class="title_container4">
-            <h2>КЕЙСЫ</h2>
-            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maiores voluptates omnis nulla illum excepturi eligendi quas.</h5>
-        </div>
-    </div>
-    <div class="case2">
-        <div class="case3">
-            <h3 id="C">CLIENT:</h3>
-            <h4 id="KK">Какая-то компания</h4>
-            <h3 id="W">WEBSITE:</h3>
-            <h4 id="http">http://www.somedomain.com</h4>
-            <input type="submit" value="VISIT LIVE SITE">
-        </div>
-        <div class="case4">
-            <h3 id="NP">Название проекта</h3>
-            <h4 id="NPT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit aspernatur ipsum iusto corporis, vitae earum eligendi quaerat adipisci cupiditate officia fugit veniam, sed molestias nesciunt aperiam exercitationem consequuntur enim unde. Beatae natus rerum veniam eius obcaecati repellendus neque a quam!</h4>
+        <div class="container h-100">
+            <div class="row justify-content-center">
+                <div class="title_container4">
+                    <h2>КЕЙСЫ</h2>
+                    <img src="img/cherta.png" alt="">
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam maiores voluptates omnis nulla illum excepturi eligendi quas.</h5>
+                </div>
+            </div>
+            <div class="case2">
+                <div class="row justify-content-center">
+                    <div class="case21"></div>
+                </div>
+                <div class="row justify-content-center" style="margin-top: 40px;">
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-5 col-sm-5">
+                        <h3 id="C">CLIENT:</h3>
+                        <h4 id="KK">Какая-то компания</h4>
+                        <h3 id="W">WEBSITE:</h3>
+                        <h4 id="http">http://www.somedomain.com</h4>
+                        <input type="button" value="Перейти на сайт">
+                    </div>
+                    <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-7 col-sm-7">
+                        <h3 id="NP">Название проекта</h3>
+                        <h4 id="NPT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit aspernatur ipsum iusto corporis, vitae earum eligendi quaerat adipisci cupiditate officia fugit veniam, sed molestias nesciunt aperiam exercitationem consequuntur enim unde. Beatae natus rerum veniam eius obcaecati repellendus neque a quam!</h4>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="cost">
-        <div class="title_container5">
-            <h2>Расчет стоимости</h2>
-            <h3>ТИП САЙТА</h3>
-            <select name="list1" id="list1">
-                <option value="Opt0" disabled selected>Выберите пункт...
-                </option>
-                <option value="Opt1">1
-                </option>
-                <option value="Opt2">2
-                </option>
-                <option value="Opt3">3
-                </option>
-            </select>
-            <h3>ДИЗАЙН</h3>
-            <select name="list2" id="list2">
-                <option value="Opt0" disabled selected>Выберите пункт...
-                </option>
-                <option value="Opt4">1
-                </option>
-                <option value="Opt5">2
-                </option>
-            </select>
-            <h3>АДАПТИВНОСТЬ</h3>
-            <select name="list3" id="list3">
-                <option value="Opt0" disabled selected>Выберите пункт...
-                </option>
-                <option value="Opt6">1
-                </option>
-                <option value="Opt7">2
-                </option>
-            </select>
-            <div id="srst">
-                <h4 id="Sr">Сроки</h4>
-                <h4 id="St">Стоимость</h4>
-            </div>
-            <div id="srst2">
-                <h5 id="Sr2">0</h5>
-                <h5 id="St2">0</h5>
+        <div class="container h-100">
+            <div class="title_container5 h-100">
+                <div class="row justify-content-center">
+                    <h2>Расчет стоимости</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10 offset-1">
+                        <h3>ТИП САЙТА</h3>
+                        <select name="list1" id="list1">
+                            <option value="Opt0" disabled selected>Выберите пункт...
+                            </option>
+                            <option value="Opt1">1
+                            </option>
+                            <option value="Opt2">2
+                            </option>
+                            <option value="Opt3">3
+                            </option>
+                        </select>
+                        <h3>ДИЗАЙН</h3>
+                        <select name="list2" id="list2">
+                            <option value="Opt0" disabled selected>Выберите пункт...
+                            </option>
+                            <option value="Opt4">1
+                            </option>
+                            <option value="Opt5">2
+                            </option>
+                        </select>
+                        <h3>АДАПТИВНОСТЬ</h3>
+                        <select name="list3" id="list3">
+                            <option value="Opt0" disabled selected>Выберите пункт...
+                            </option>
+                            <option value="Opt6">1
+                            </option>
+                            <option value="Opt7">2
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row justify-content-center" style="margin-top: 50px;">
+                    <div id="srst">
+                        <div class="row">
+                            <div class="col-1 offset-1">
+                                <h4 id="Sr">Сроки</h4>
+                            </div>
+                            <div class="col-1 offset-8">
+                                <h5 id="Sr2">0</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="srst2">
+                        <div class="row">
+                            <div class="col-2 offset-1">
+                                <h4 id="St">Стоимость</h4>
+                            </div>
+                            <div class="col-1 offset-7">
+                                <h5 id="St2">0</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <input type="button" value="Оставить заявку">
+                </div>
             </div>
         </div>
     </div>
     <div class="statistic">
-        <div class="title_container6">
-            <h2>НЕМНОГО СТАТИСТИКИ</h2>
-            <h3 id="fich">120</h3>
-            <h3 id="sech">4,600</h3>
-            <h3 id="thch">340</h3>
-            <h3 id="foch">23</h3>
-        </div>
-        <div class="title_container61">
-            <h5 id="schk">СЧАСТЛИВЫХ КЛИЕНТОВ</h5>
-            <h5 id="chr">ЧАСОВ РАБОТЫ</h5>
-            <h5 id="prz">ПРОЕКТОВ ЗАВЕРШЕНО</h5>
-            <h5 id="nap">НАГРАД ПОЛУЧЕНО</h5>
+        <div class="container h-100">
+            <div class="row justify-content-center">
+                <div class="col-xxl-4 col-lg-8">
+                    <div class="title_container6">
+                        <h2>НЕМНОГО СТАТИСТИКИ</h2>
+                    </div>
+                </div>
+                <div class="title_container61">
+                    <img src="img/cherta.png" alt="">
+                </div>
+            </div>
+            <div class="row justify-content-center" id="strw1">
+                <div class="col-1 d-flex justify-content-center align-items-center">
+                    <p><img src="img/smile.png" alt=""></p>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center offset-2">
+                    <p><img src="img/znak2.png" alt=""></p>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center offset-2">
+                    <p><img src="img/galka.png" alt=""></p>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center offset-2">
+                    <p><img src="img/kubok.png" alt=""></p>
+                </div>
+            </div>
+            <div class="row justify-content-center" id="strw2">
+                <div class="col-1 d-flex justify-content-center align-items-center">
+                    <h3 id="fich">120</h3>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center offset-2">
+                    <h3 id="sech">4,600</h3>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center offset-2">
+                    <h3 id="thch">340</h3>
+                </div>
+                <div class="col-1 d-flex justify-content-center align-items-center offset-2">
+                    <h3 id="foch">23</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center" id="strw3">
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                    <h5 id="schk">СЧАСТЛИВЫХ КЛИЕНТОВ</h5>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                    <h5 id="chr">ЧАСОВ РАБОТЫ</h5>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                    <h5 id="prz">ПРОЕКТОВ ЗАВЕРШЕНО</h5>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                    <h5 id="nap">НАГРАД ПОЛУЧЕНО</h5>
+                </div>
+            </div>
         </div>
     </div>
     <div class="response">
         <div class="title_containe7">
             <h2>ОТЗЫВЫ</h2>
+            <img src="img/cherta.png" alt="">
+            <p><img src="img/foto_otziv.png" alt=""></p>
             <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tempora animi pariatur sit sint saepe, molestias ducimus magnam corrupti facere reprehenderit culpa, incidunt quam fugiat.</h4>
             <h5>
                 <span>Михаил</span>, Ген директор ПАО "Газпром".
@@ -146,8 +325,13 @@
     <div class="contacts">
         <div class="title_containe8">
             <h2>МОИ КОНТАКТЫ</h2>
+            <img src="img/cherta.png" alt="">
             <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus harum tenetur nulla, laboriosam quisquam odit.</h5>
             <div class="title_container81">
+                <img src="img/geo.png" alt="">
+                <img src="img/email.png" alt="">
+                <img src="img/phone.png" alt="">
+
                 <h4 id="adres">Волжский, <br> Волгоградская область</h4>
                 <h4 id="maill">TemaNickolaenko@yandex.ru</h4>
                 <h4 id="numberphone">+7 904 412 33 30</h4>
@@ -160,6 +344,12 @@
 </textarea>
                 <p><input type="reset" id="go" value="Отправить"></p>
             </form>
+            <img src="img/f.png" alt="">
+            <img src="img/twit.png" alt="">
+            <img src="img/ball.png" alt="">
+            <img src="img/cat.png" alt="">
+            <img src="img/inst.png" alt="">
+            <img src="img/in.png" alt="">
         </div>
     </div>
     <div class="map">
@@ -170,6 +360,7 @@
             <h5>Copyright © 2021 Артем Николаенко. Design by Web</h5>
         </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
