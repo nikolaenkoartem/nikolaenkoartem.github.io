@@ -7,6 +7,7 @@
     <meta name="author" content="Artem">
     <meta name="robots" content="all">
     <meta property="og:title" content="Это моя первая страница">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Артём Николаенко - Веб-разработчик</title>
     <link rel="shortcut icon" href="https://faviconka.ru/ico/1/faviconka.ru_1_100472.ico">
     <link rel="stylesheet" href="css/reset.css">
@@ -170,19 +171,21 @@
             </div>
             <div class="case2">
                 <div class="row justify-content-center" style="">
-                    <div class="case21"><img src="img/fon5.png" alt=""></div>
+                    <div class="case21"><img src="img/fon5.png" alt="" style="max-width: 100%;"></div>
                 </div>
-                <div class="row justify-content-center" style="margin-top: 40px;">
-                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-5 col-sm-5">
+                <div class="row justify-content-center" id="cs">
+                    <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-12 col-sm-12">
                         <h3 id="C">CLIENT:</h3>
                         <h4 id="KK">Какая-то компания</h4>
                         <h3 id="W">WEBSITE:</h3>
                         <h4 id="http">http://www.somedomain.com</h4>
-                        <input type="button" value="Перейти на сайт">
                     </div>
-                    <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-7 col-sm-7">
+                    <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-12 col-sm-12">
                         <h3 id="NP">Название проекта</h3>
                         <h4 id="NPT">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit aspernatur ipsum iusto corporis, vitae earum eligendi quaerat adipisci cupiditate officia fugit veniam, sed molestias nesciunt aperiam exercitationem consequuntur enim unde. Beatae natus rerum veniam eius obcaecati repellendus neque a quam!</h4>
+                    </div>
+                    <div class="row">
+                        <input type="button" value="Перейти на сайт">
                     </div>
                 </div>
             </div>
@@ -312,14 +315,24 @@
         </div>
     </div>
     <div class="response">
-        <div class="title_containe7">
-            <h2>ОТЗЫВЫ</h2>
-            <img src="img/cherta.png" alt="">
-            <p><img src="img/foto_otziv.png" alt=""></p>
-            <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tempora animi pariatur sit sint saepe, molestias ducimus magnam corrupti facere reprehenderit culpa, incidunt quam fugiat.</h4>
-            <h5>
-                <span>Михаил</span>, Ген директор ПАО "Газпром".
-            </h5>
+        <div class="container h-100">
+            <div class="row justify-content-center">
+                <div class="col-xxl-2 col-lg-6">
+                    <div class="title_container7">
+                        <h2>ОТЗЫВЫ</h2>
+                    </div>
+                </div>
+                <div class="title_container71">
+                    <p><img src="img/cherta.png" alt=""></p>
+                    <p><img src="img/foto_otziv.png" alt="" id="foto_otziv"></p>
+                    <div class="col-xxl-8 col-xl-10 col-lg-10 offset-xxl-2 offset-xl-1 offset-lg-1">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non tempora animi pariatur sit sint saepe, molestias ducimus magnam corrupti facere reprehenderit culpa, incidunt quam fugiat.</h4>
+                        <h5>
+                            <span>Михаил</span>, Ген директор ПАО "Газпром".
+                        </h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="contacts">
@@ -356,8 +369,12 @@
         <h2>КАРТА</h2>
     </div>
     <footer>
-        <div class="footer">
-            <h5>Copyright © 2021 Артем Николаенко. Design by Web</h5>
+        <div class="row align-items-center">
+            <div class="col">
+                <div class="footer">
+                    <h5>Copyright © 2021 Артем Николаенко. Design by Web</h5>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
