@@ -629,6 +629,50 @@ nav {
 #linepng {
     margin-top: 25px;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width:1399px) {
+    #linepng {
+        width: 850px;
+    }
+}
+
+@media (max-width:991px) {
+    #linepng {
+        width: 640px;
+    }
+}
+
+@media (max-width:767px) {
+    #linepng {
+        width: 470px;
+    }
+}
+
+@media (max-width:575px) {
+    #linepng {
+        width: 500px;
+    }
+}
+
+@media (max-width:533px) {
+    #linepng {
+        width: 450px;
+    }
+}
+
+@media (max-width:480px) {
+    #linepng {
+        width: 400px;
+    }
+}
+
+@media (max-width:430px) {
+    #linepng {
+        width: 330px;
+    }
 }
 
 .title_container5 h2 {
@@ -673,7 +717,7 @@ nav {
 }
 
 .cost input {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     margin-top: 22px;
     height: 45px;
     font-size: 18px;
