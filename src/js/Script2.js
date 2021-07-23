@@ -28,7 +28,9 @@ let mainList = [];
 mainList.push(typeShopOne, typeShopTwo, typeShopThree);
 alert(mainList);
 
-if (typeShopOne == 1) {
+let chekOne = function () {
+    if ((typeShopOne == 1) || (typeShopOne == 2) || (typeShopOne == 3)) {
+        if (typeShopOne == 1) {
             typeShopOne = 30000;
             typeShop1 = 7;
         }
@@ -42,36 +44,41 @@ if (typeShopOne == 1) {
             typeShopOne = 80000;
             typeShop1 = 30;
         }
+    } else {
+        alert("Введите число от 1 до 3!!!");
+        require chekOne;
+    }
+};
 
-        if (typeShopTwo == 1) {
-            typeShopTwo = 0;
-            typeShop2 = 0;
-        }
+if (typeShopTwo == 1) {
+    typeShopTwo = 0;
+    typeShop2 = 0;
+}
 
-        if (typeShopTwo == 2) {
-            typeShopTwo = 50000;
-            typeShop2 = 10;
-        }
+if (typeShopTwo == 2) {
+    typeShopTwo = 50000;
+    typeShop2 = 10;
+}
 
-        if (typeShopTwo == 3) {
-            typeShopTwo = 100000;
-            typeShop2 = 30;
-        }
+if (typeShopTwo == 3) {
+    typeShopTwo = 100000;
+    typeShop2 = 30;
+}
 
-        if (typeShopThree == 1) {
-            typeShopThree = 0;
-            typeShop3 = 0;
-        }
+if (typeShopThree == 1) {
+    typeShopThree = 0;
+    typeShop3 = 0;
+}
 
-        if (typeShopThree == 2) {
-            typeShopThree = 10000;
-            typeShop3 = 3;
-        }
+if (typeShopThree == 2) {
+    typeShopThree = 10000;
+    typeShop3 = 3;
+}
 
-        if (typeShopThree == 3) {
-            typeShopThree = 50000;
-            typeShop3 = 5;
-        }
+if (typeShopThree == 3) {
+    typeShopThree = 50000;
+    typeShop3 = 5;
+}
 
 let result1 = typeShopOne + typeShopTwo + typeShopThree;
 let result2 = typeShop1 + typeShop2 + typeShop3;
@@ -79,10 +86,7 @@ let result = "СТОИМОСТЬ: " + result1 + " рублей" + "          С�
 
 alert(result);
 
+
 console.log(result1);
 console.log(result2);
 console.log(result);
-
-
-
-
