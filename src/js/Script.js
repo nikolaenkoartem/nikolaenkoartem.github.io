@@ -111,9 +111,9 @@ $('a[href^="#"]').click(function () {
     });
 });
 
-$(window).scroll(() => {
+/*$(window).scroll(() => {
     let scrollDistance = $(window).scrollTop();
-    $(".section").each((i, el) => {
+    $("section").each((i, el) => {
         if ($(el).offset().top - $("nav").outerHeight() <= scrollDistance) {
             $("nav a").each((i, el) => {
                 if ($(el).hasClass("active")) {
@@ -123,7 +123,7 @@ $(window).scroll(() => {
             $('nav li: eq(' + i + ')').find('a').addClass('active');
         }
     });
-});
+});*/
 
 $(function() {
 	
@@ -132,14 +132,14 @@ $(function() {
 		
 		$(window).scroll(function() {
 		
-			var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
+			var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height() - 200));
 			
 			if(scrollEvent && blockStatus) {
 			
 				blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
 				
 				$({numberValue: 0}).animate({numberValue: 120}, {
-                    
+                    delay: 2000,
 					duration: 2000, // Продолжительность анимации 
 					easing: "linear",
 					
