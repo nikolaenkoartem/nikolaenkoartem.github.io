@@ -113,7 +113,7 @@ $('a[href^="#"]').click(function () {
 
 /*$(window).scroll(() => {
     let scrollDistance = $(window).scrollTop();
-    $("section").each((i, el) => {
+    $(".sect").each((i, el) => {
         if ($(el).offset().top - $("nav").outerHeight() <= scrollDistance) {
             $("nav a").each((i, el) => {
                 if ($(el).hasClass("active")) {
@@ -125,130 +125,146 @@ $('a[href^="#"]').click(function () {
     });
 });*/
 
-$(function() {
-	
-		var target_block = $("#fich"); // Ищем блок 
-		var blockStatus = true;
-		
-		$(window).scroll(function() {
-		
-			var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height() - 200));
-			
-			if(scrollEvent && blockStatus) {
-			
-				blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
-				
-				$({numberValue: 0}).animate({numberValue: 120}, {
-                    delay: 2000,
-					duration: 2000, // Продолжительность анимации 
-					easing: "linear",
-					
-					step: function(val) {
-					
-						$("#fich").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
-						
-					}
-					
-				});
-				
-			}
-			
-		});
-		
-	});
+$(function () {
 
-$(function() {
-	
-		var target_block = $("#sech"); // Ищем блок 
-		var blockStatus = true;
-		
-		$(window).scroll(function() {
-		
-			var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
-			
-			if(scrollEvent && blockStatus) {
-			
-				blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
-				
-				$({numberValue: 0}).animate({numberValue: 4600}, {
-                    
-					duration: 2000, // Продолжительность анимации
-					easing: "linear",
-					
-					step: function(val) {
-					
-						$("#sech").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
-						
-					}
-					
-				});
-				
-			}
-			
-		});
-		
-	});
+    var target_block = $("#fich"); // Ищем блок 
+    var blockStatus = true;
 
-$(function() {
-	
-		var target_block = $("#thch"); // Ищем блок 
-		var blockStatus = true;
-		
-		$(window).scroll(function() {
-		
-			var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
-			
-			if(scrollEvent && blockStatus) {
-			
-				blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
-				
-				$({numberValue: 0}).animate({numberValue: 340}, {
-                    
-					duration: 2000, // Продолжительность анимации
-					easing: "linear",
-					
-					step: function(val) {
-					
-						$("#thch").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
-						
-					}
-					
-				});
-				
-			}
-			
-		});
-		
-	});
+    $(window).scroll(function () {
 
-$(function() {
-	
-		var target_block = $("#foch"); // Ищем блок 
-		var blockStatus = true;
-		
-		$(window).scroll(function() {
-		
-			var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
-			
-			if(scrollEvent && blockStatus) {
-			
-				blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
-				
-				$({numberValue: 0}).animate({numberValue: 23}, {
-                    
-					duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд 
-					easing: "linear",
-					
-					step: function(val) {
-					
-						$("#foch").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
-						
-					}
-					
-				});
-				
-			}
-			
-		});
-		
-	});
+        var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height() + 200));
+
+        if (scrollEvent && blockStatus) {
+
+            blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
+
+            $({
+                numberValue: 0
+            }).animate({
+                numberValue: 120
+            }, {
+                delay: 2000,
+                duration: 2000, // Продолжительность анимации 
+                easing: "linear",
+
+                step: function (val) {
+
+                    $("#fich").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
+
+                }
+
+            });
+
+        }
+
+    });
+
+});
+
+$(function () {
+
+    var target_block = $("#sech"); // Ищем блок 
+    var blockStatus = true;
+
+    $(window).scroll(function () {
+
+        var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
+
+        if (scrollEvent && blockStatus) {
+
+            blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
+
+            $({
+                numberValue: 0
+            }).animate({
+                numberValue: 4600
+            }, {
+
+                duration: 2000, // Продолжительность анимации
+                easing: "linear",
+
+                step: function (val) {
+
+                    $("#sech").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
+
+                }
+
+            });
+
+        }
+
+    });
+
+});
+
+$(function () {
+
+    var target_block = $("#thch"); // Ищем блок 
+    var blockStatus = true;
+
+    $(window).scroll(function () {
+
+        var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
+
+        if (scrollEvent && blockStatus) {
+
+            blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
+
+            $({
+                numberValue: 0
+            }).animate({
+                numberValue: 340
+            }, {
+
+                duration: 2000, // Продолжительность анимации
+                easing: "linear",
+
+                step: function (val) {
+
+                    $("#thch").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
+
+                }
+
+            });
+
+        }
+
+    });
+
+});
+
+$(function () {
+
+    var target_block = $("#foch"); // Ищем блок 
+    var blockStatus = true;
+
+    $(window).scroll(function () {
+
+        var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
+
+        if (scrollEvent && blockStatus) {
+
+            blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
+
+            $({
+                numberValue: 0
+            }).animate({
+                numberValue: 23
+            }, {
+
+                duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд 
+                easing: "linear",
+
+                step: function (val) {
+
+                    $("#foch").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
+
+                }
+
+            });
+
+        }
+
+    });
+
+});
