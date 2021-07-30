@@ -111,20 +111,6 @@ $('a[href^="#"]').click(function () {
     });
 });
 
-/*$(window).scroll(() => {
-    let scrollDistance = $(window).scrollTop();
-    $(".sect").each((i, el) => {
-        if ($(el).offset().top - $("nav").outerHeight() <= scrollDistance) {
-            $("nav a").each((i, el) => {
-                if ($(el).hasClass("active")) {
-                    $(el).removeClass("active");
-                }
-            });
-            $('nav li: eq(' + i + ')').find('a').addClass('active');
-        }
-    });
-});*/
-
 $(function () {
 
     var target_block = $("#fich"); // Ищем блок 
@@ -132,7 +118,7 @@ $(function () {
 
     $(window).scroll(function () {
 
-        var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height() + 200));
+        var scrollEvent = ($(window).scrollTop() > (target_block.position().top - $(window).height()));
 
         if (scrollEvent && blockStatus) {
 
@@ -268,3 +254,18 @@ $(function () {
     });
 
 });
+
+
+/*$(window).scroll(() => {
+    let scrollDistance = $(window).scrollTop();
+    $(".sect").each((i, el) => {
+        if ($(el).offset().top - $("nav").outerHeight() <= scrollDistance) {
+            $("nav a").each((i, el) => {
+                if ($(el).hasClass("active")) {
+                    $(el).removeClass("active");
+                }
+            });
+            $('nav li: eq(' + i + ')').find('a').addClass('active');
+        }
+    });
+});*/

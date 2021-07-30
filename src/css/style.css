@@ -161,7 +161,7 @@ nav {
 }
 
 .menu li a:active {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 #dropdownMenuLink {
@@ -892,7 +892,67 @@ nav {
 @media (max-width: 991px) {
     #foto_otziv {
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    #foto_otziv {
+    margin-bottom: 26px;
+    }
+    .carousel-caption {
+    padding-bottom: 35px;
+}
+}
+
+@media (max-width: 575px) {
+    #foto_otziv {
+    margin-bottom: 35px;
+    }
+    .carousel-caption {
+    padding-bottom: 45px;
+}
+}
+
+@media (max-width: 552px) {
+    #foto_otziv {
+    margin-bottom: 25px;
+    }
+    .carousel-caption {
+    padding-bottom: 35px;
+}
+}
+
+@media (max-width: 473px) {
+    .carousel-caption h4 {
+        font-size: 16px;
+    }
+    .carousel-caption h5 {
+        font-size: 16px;
+    }
+    .carousel-caption {
+    padding-bottom: 40px;
+}
+    #foto_otziv {
+    margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 423px) {
+    .carousel-caption h4 {
+        font-size: 15px;
+    }
+    .carousel-caption h5 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 398px) {
+    .carousel-caption h4 {
+        font-size: 14px;
+    }
+    .carousel-caption h5 {
+        font-size: 14px;
     }
 }
 
