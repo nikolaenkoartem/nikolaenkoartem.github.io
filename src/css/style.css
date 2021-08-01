@@ -497,8 +497,6 @@ nav {
 
 .case21 {
     margin-top: 53px;
-    width: 100%;
-    height: 576px;
     text-align: center;
 }
 
@@ -506,13 +504,13 @@ nav {
     margin-top: 40px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .case21 {
         margin-top: 33px;
     }
 
     #cs {
-        margin-top: -60px;
+        margin-top: 30px;
     }
 
     .case {
@@ -522,7 +520,7 @@ nav {
 
 @media (max-width: 992px) {
     #cs {
-        margin-top: -90px;
+        margin-top: 20px;
     }
 
     .case {
@@ -532,7 +530,7 @@ nav {
 
 @media (max-width: 991px) {
     #cs {
-        margin-top: -220px;
+        margin-top: -10px;
     }
 
     .case {
@@ -540,15 +538,15 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #cs {
-        margin-top: -260px;
+        margin-top: 20px;
     }
 }
 
 @media (max-width: 440px) {
     #cs {
-        margin-top: -360px;
+        margin-top: 40px;
     }
 }
 
@@ -646,8 +644,8 @@ nav {
   z-index: 20;
   margin: 0;
   width: 85%;
-  min-width: 420px;
-  max-width: 1300px;
+  min-width: 320px;
+  max-width: 1700px;
   /* фиксированное позиционирование, окно стабильно при прокрутке */
   position: fixed;
   padding: 15px;
@@ -682,9 +680,32 @@ nav {
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  top: 20%;
+  top: 4%;
 }
 
+@media (max-width: 1860px){
+    .overlay:target+.popup {
+        top: 7%;
+    }
+}
+
+@media (max-width: 1500px){
+    .overlay:target+.popup {
+        top: 15%;
+    }
+}
+
+@media (max-width: 950px){
+    .overlay:target+.popup {
+        top: 25%;
+    }
+}
+
+@media (max-width: 470px){
+    .overlay:target+.popup {
+        top: 35%;
+    }
+}
 
 /* формируем кнопку закрытия */
 

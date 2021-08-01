@@ -104,6 +104,24 @@ console.log(result1);
 console.log(result2);
 console.log(result);*/
 
+$('.open-link').magnificPopup({
+  type: 'image',
+  closeOnBgClick: true,
+  fixedContentPos: false,
+  callbacks: {
+    open: function() {
+      jQuery('body').addClass('noscroll');
+    },
+    close: function() {
+      jQuery('body').removeClass('noscroll');
+    }
+  }
+});
+
+body.noscroll {
+  overflow-y: hidden!important;
+}
+
 $('a[href^="#"]').click(function () {
     let valHref = $(this).attr("href");
     $('html, body').animate({
@@ -238,7 +256,7 @@ $(function () {
                 numberValue: 23
             }, {
 
-                duration: 2000, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд 
+                duration: 2000, // Продолжительность анимации 
                 easing: "linear",
 
                 step: function (val) {
